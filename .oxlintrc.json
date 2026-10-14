@@ -1,0 +1,12 @@
+{
+    "$schema": "./node_modules/oxlint/configuration_schema.json",
+    "plugins": ["typescript", "unicorn", "oxc", "import", "promise", "node"],
+    "env": {
+        "node": true,
+        "es2024": true
+    },
+    "ignorePatterns": ["bun.lock"],
+    "rules": {
+        "import/no-unassigned-import": "off"
+    }
+}

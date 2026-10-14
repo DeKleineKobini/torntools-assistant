@@ -1,0 +1,28 @@
+{
+    "name": "torntools-assistant",
+    "version": "1.0.0",
+    "description": "Discord bot whose /bug-report command shows what a bug report should contain",
+    "license": "ISC",
+    "type": "commonjs",
+    "main": "src/index.ts",
+    "scripts": {
+        "dev": "bun --watch src/index.ts",
+        "start": "bun src/index.ts",
+        "format": "oxfmt .",
+        "format:check": "oxfmt --check .",
+        "lint": "oxlint .",
+        "check": "oxlint . && oxfmt --check .",
+        "check:write": "oxlint --fix . && oxfmt ."
+    },
+    "dependencies": {
+        "@sapphire/framework": "^5.5.1",
+        "discord.js": "^14.27.0",
+        "dotenv": "^18.0.5"
+    },
+    "devDependencies": {
+        "@types/bun": "^1.4.2",
+        "oxfmt": "^0.71.0",
+        "oxlint": "^1.86.0",
+        "typescript": "^6.0.3"
+    }
+}
