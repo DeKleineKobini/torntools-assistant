@@ -19,16 +19,16 @@ function buildBugReportEmbed(): EmbedBuilder {
                 value: "What's going wrong, and what you expected to happen. A screenshot alone doesn't tell us what's wrong.",
             },
             { name: "Screenshots", value: "Show us what you're seeing." },
+            { name: "TornTools Version", value: "What version of TornTools are you using?" },
             {
                 name: "Feature Manager errors",
                 value: "Include any errors the Feature Manager is showing (text or screenshot).",
             },
-            { name: "Device", value: "e.g. desktop PC, laptop, iPhone, Android phone." },
-            { name: "OS", value: "e.g. Windows 11, macOS, iOS, Android, Linux." },
             {
                 name: "Browser",
-                value: "e.g. Chrome, Firefox, Edge, Safari (name + version if you know it).",
+                value: "e.g. Chrome, Firefox, Edge, Safari, TornPDA (name + version if you know it).",
             },
+            { name: "Device + OS", value: "e.g. PC with Windows 11, Android or iOS." },
         )
         .setFooter({ text: BUG_REPORT_FOOTER });
 }
