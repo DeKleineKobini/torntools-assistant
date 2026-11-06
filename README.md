@@ -1,7 +1,8 @@
 # TT Assistant
 
 Discord bot for the Torn Tools community. Its `/bug-report` command posts a checklist of the
-information a bug report must contain, so members know what to include before filing one.
+information a bug report must contain, so members know what to include before filing one, and its
+`/data-dump` command explains how to create a full data dump when a developer asks for one.
 
 ## Add the bot to your server
 
@@ -44,9 +45,10 @@ up in Discord. Environment variables: `DISCORD_TOKEN`.
 
 ## Commands
 
-| Command       | Purpose                                                                 |
-| ------------- | ----------------------------------------------------------------------- |
-| `/bug-report` | Post the bug report checklist. Open to everyone, usable in any channel. |
+| Command       | Purpose                                                                                |
+| ------------- | -------------------------------------------------------------------------------------- |
+| `/bug-report` | Post the bug report checklist. Open to everyone, usable in any channel.                |
+| `/data-dump`  | Post the full data dump guide, with an optional `full` flag for `fullDataDump(false)`. |
 
 ## Development
 
