@@ -24,15 +24,15 @@ function buildDataDumpEmbed({ full }: { full: boolean }): EmbedBuilder {
         )
         .addFields(
             {
-                name: "Open the TornTools settings",
+                name: ":one: Open the TornTools settings",
                 value: "Open the TornTools popup and go to the settings page. Do **NOT** use the settings link in the sidebar!",
             },
             {
-                name: "Open the devtools console",
+                name: ":two: Open the devtools console",
                 value: "Press `F12` and switch to the **Console** tab.",
             },
             {
-                name: "3️⃣ Run this command in the console tab",
+                name: ":three: Run this command in the console tab",
                 value: [
                     "```js",
                     full ? "DebugFunctions.fullDataDump(false)" : "DebugFunctions.fullDataDump()",
@@ -40,7 +40,7 @@ function buildDataDumpEmbed({ full }: { full: boolean }): EmbedBuilder {
                 ].join("\n"),
             },
             {
-                name: "4️⃣ Download and share the file",
+                name: ":four: Download and share the file",
                 value: "`torntools-full-data-dump.json` downloads automatically. If it doesn't, go back to the settings page and finish the download process there. Then attach the file where the developer asked for it.",
             },
         )
